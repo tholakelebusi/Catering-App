@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="container">
+  <div class="cell">Welcome to Thols Catering App</div>
+  <form>
+    <h2>Registration Form</h2>
+  
+        <ion-label color="primary">First Name</ion-label>
+        <input [(ngModel)]="name" name="name" type="string" matInput required >
+        <br>
+          <ion-label color="primary">Last Name</ion-label>
+          <input [(ngModel)]="surname" name="surname"  type="string" matInput required >
+
+<ion-label color="primary">Age</ion-label>
+<input [(ngModel)]="age" name="age" type="text" matInput required>
+<br>
+
+<ion-label color="primary">Cell number</ion-label>
+<input [(ngModel)]="cellNo" name="cellNo" type="number" matInput required>
+
+<br>
+<ion-label color="primary">Email</ion-label>
+<input [(ngModel)]="email" name="email" type="text" matInput required>
+<br>
+     
+            <ion-label color="primary">Password</ion-label>
+            <input [(ngModel)]="password" name="password" type="string" matInput required >
+            <br>
+
+<ion-button expand="block" (click)="signUp()" type="submit">Block Button</ion-button>
+
+          
+            <p>
+              <a routerLink="/tabs/tab1" >Already a Member</a>
+              </p> 
+
+  </form>
+  </div>
+</ion-content>
+
