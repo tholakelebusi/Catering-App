@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="text" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit">Block Button</ion-button>
+  </form>
+  
+  <div class="resetLink">
+    <a routerLink="/resert">Forgot password?</a>
+  </div>
+  <p>
+    <a routerLink="/register">Not a member</a>
+  </p>
+
+</ion-card-content>
+</ion-card>
+</ion-content>

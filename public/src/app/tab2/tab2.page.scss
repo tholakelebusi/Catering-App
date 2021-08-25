@@ -1,0 +1,26 @@
+.btnconta
+{
+    height:70%;
+    width:100%;
+    margin-top: 1.5cm;
+    background-image: url('https://images.pexels.com/photos/6004206/pexels-photo-6004206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+  background-size: 600px 600px;
+}
+
+.btn
+{
+    background-color:#ffcc33; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 23%;
+    cursor: pointer;
+    border-radius: 80%;
+    height:2cm;
+    width:4cm;
+}
